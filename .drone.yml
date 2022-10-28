@@ -1,0 +1,17 @@
+kind: pipeline
+type: exec
+name: default
+
+
+clone:
+  disable: true
+
+steps:
+  - name: Configure environment
+    commands:
+      - cd /tmp/checkout
+      - configure
+  - name: run unit tests
+    commands:
+      - cd /tmp/checkout
+      - make test quicktest
