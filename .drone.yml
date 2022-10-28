@@ -9,8 +9,8 @@ steps:
   - name: Configure environment
     commands:
       - cd /tmp/checkout
-      - configure
+      - ./configure
   - name: run unit tests
     commands:
       - cd /tmp/checkout
-      - make test quicktest
+      - make -j4 test quicktest
