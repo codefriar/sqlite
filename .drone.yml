@@ -13,4 +13,4 @@ steps:
   - name: run unit tests
     commands:
       - cd /tmp/checkout
-      - make test quicktest 
+      - make test quicktest
